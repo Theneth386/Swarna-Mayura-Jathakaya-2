@@ -22,7 +22,7 @@ const countdownTimer = setInterval(function() {
         }
 
         if (audioBox) {
-            audioBox.innerHTML = `<iframe id="bg-music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="${soundCloudLink}"></iframe>`; 
+            audioBox.innerHTML = `<iframe id="bg-music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://google.com1ZuTEYP_dRbLJdMpjDAS99UsGKFDW5puP"></iframe>`; 
         }
     }
 }, 1000);
@@ -35,9 +35,10 @@ if (musicBtn) {
             musicBtn.classList.add("music-off");
             isMusicOn = false;
         } else {
-            if (audioBox) audioBox.innerHTML = `<iframe id="bg-music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="${soundCloudLink}"></iframe>`;
+            if (audioBox) audioBox.innerHTML = `<iframe id="bg-music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://google.com1ZuTEYP_dRbLJdMpjDAS99UsGKFDW5puP"></iframe>`;
             musicBtn.textContent = "🎵 Music: ON";
             musicBtn.classList.remove("music-off");
+            isMusicOn = true;
         }
     });
 }
