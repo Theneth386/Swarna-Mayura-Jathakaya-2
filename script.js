@@ -3,7 +3,7 @@ const secondsSpan = document.getElementById("seconds");
 const loadingScreen = document.getElementById("loading-screen");
 const musicBtn = document.getElementById("music-btn");
 const audioBox = document.getElementById("audio-container");
-const driveAudioLink = "https://drive.google.com/file/d/1ZuTEYP_dRbLJdMpjDAS99UsGKFDW5puP/preview";
+const driveAudioLink = "audio/ඩජටල වසක තරණ l සවරණ මයර ජතකය  Swarna Mayura Jatakaya.mp3";
 let isMusicOn = true;
 if (secondsSpan) {
     secondsSpan.textContent = timeleft;
@@ -22,23 +22,26 @@ const countdownTimer = setInterval(function() {
         }
 
         if (audioBox) {
-            audioBox.innerHTML = `<iframe id="bg-music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="${driveAudioLink}"></iframe>`; 
+            audioBox.innerHTML = `<audio id="bg-music" autoplay loop><source src="${driveAudioLink}" type="audio/mpeg"></audio>`; 
         }
     }
 }, 1000);
 
 if (musicBtn) {
     musicBtn.addEventListener("click", function() {
-        if (isMusicOn) {
-            if (audioBox) audioBox.innerHTML = "";
-            musicBtn.textContent =  "🔇 Music: OFF";
-            musicBtn.classList.add("music-off");
-            isMusicOn = false;
-        } else {
-            if (audioBox) audioBox.innerHTML = `<iframe id="bg-music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="${driveAudioLink}"></iframe>`;
-            musicBtn.textContent = "🎵 Music: ON";
-            musicBtn.classList.remove("music-off");
-            isMusicOn = true;
+        const bgMusic = document.getElementById("bg-music");
+        if (bgMusic) {
+            if (isMusicOn) {
+                bgMusic.pause();
+                musicBtn.textContent = "🔇 Music: OFF";
+                musicBtn.classList.add("music-off");
+                isMusicOn = false;
+            } else {
+                bgMusic.play();
+                musicBtn.textContent = "🎵 Music: ON";
+                musicBtn.classList.remove("music-off");
+                isMusicOn = true;
+            }
         }
     });
 }
