@@ -92,3 +92,10 @@ music-off {
     background-color: #ff3333 !important;
     color: white
 }
+
+#main-content {
+    transform: scale(0.25);
+    transform-origin: top center;
+    width: 400%;
+    margin: 0 auto;
+}
