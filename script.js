@@ -3,7 +3,7 @@ const secondsSpan = document.getElementById("seconds");
 const loadingScreen = document.getElementById("loading-screen");
 const musicBtn = document.getElementById("music-btn");
 const audioBox = document.getElementById("audio-container");
-const driveAudioLink = "audio/ඩජටල වසක තරණ l සවරණ මයර ජතකය  Swarna Mayura Jatakaya.mp3";
+const driveAudioLink = "music.mp3";
 let isMusicOn = true;
 if (secondsSpan) {
     secondsSpan.textContent = timeleft;
