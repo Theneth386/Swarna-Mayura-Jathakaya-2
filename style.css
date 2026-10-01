@@ -95,7 +95,10 @@ music-off {
 
 body {
     transform: scale(0.25) !important;
-    transform-origin: top center !important;
+    transform-origin: top left !important; /* කුඩා වීම වම්පස ඉහළ සිට සිදුවීමට */
     width: 400% !important;
     height: 400% !important;
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
