@@ -22,7 +22,8 @@ const countdownTimer = setInterval(function() {
         }
 
         if (audioBox) {
-            audioBox.innerHTML = `<audio id="bg-music" autoplay loop><source src="${driveAudioLink}" type="audio/mpeg"></audio>`; 
+            audioBox.innerHTML = `<audio id="bg-music" autoplay loop><source src="${driveAudioLink}" type="audio/mpeg"></audio>`;
+            bgMusic.volume = 0.3;
         }
     }
 }, 1000);
