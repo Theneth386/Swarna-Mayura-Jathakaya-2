@@ -3,7 +3,7 @@ const secondsSpan = document.getElementById("seconds");
 const loadingScreen = document.getElementById("loading-screen");
 const musicBtn = document.getElementById("music-btn");
 const audioBox = document.getElementById("audio-container");
-const driveAudioLink = "music.mp3";
+const driveAudioLink = "audio/music.mp3";
 let isMusicOn = true;
 if (secondsSpan) {
     secondsSpan.textContent = timeleft;
