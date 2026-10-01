@@ -38,6 +38,7 @@ if (musicBtn) {
                 isMusicOn = false;
             } else {
                 bgMusic.play();
+                bgMusic.volume = 0.3;
                 musicBtn.textContent = "🎵 Music: ON";
                 musicBtn.classList.remove("music-off");
                 isMusicOn = true;
