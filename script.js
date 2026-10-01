@@ -18,7 +18,7 @@ const countdownTimer = setInterval(function() {
         clearInterval(countdownTimer);
 
         if (loadingScreen) {
-            loadingScreen.style.display = "none";
+            loadingScreen.style.display = "";
         }
 
         if (audioBox) {
