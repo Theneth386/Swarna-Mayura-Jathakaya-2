@@ -12,8 +12,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 400% !important; 
-    height: 400% !important; 
+    width: 100% !important; 
+    height: 100% !important; 
     background-color: rgba(0, 0, 0, 0.95);
     
     /* පේළි දෙක වෙන් වෙන්ව තිත් කොමා සහිතව නිවැරදිව ලියා ඇත */
@@ -107,4 +107,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+* {
+    border: 2px solid red !important;
 }
