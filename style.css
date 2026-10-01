@@ -7,21 +7,23 @@ body {
     overflow-x: hidden;
 }
 
+/* 🟢 Countdown Screen එක මුළු තිරයම පුරා ලස්සනට මැදින් පැතිරීමට නිවැරදි කළ කොටස */
 #loading-screen {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
+    width: 400% !important; /* body එක 0.25 නිසා, මෙය 400% කළ විට මුළු තිරයේම පළල වසා ගනී */
+    height: 400% !important; /* මුළු තිරයේම උස වසා ගනී */
+    background-color: rgba(0, 0, 0, 0.95);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 9999;
+    z-index: 99999 !important;
     flex-direction: column;
 }
 
+/* 🟢 ඔයා හදපු, ඔයාට නිවැරදිම අකුරු වල ප්‍රමාණයන් එලෙසම තබා ඇත */
 .intro-content h1 {
     color: gold;
     font-size: 10rem;
@@ -88,14 +90,15 @@ body {
     transform: scale(1.05);
 }
 
-music-off {
+.music-off {
     background-color: #ff3333 !important;
-    color: white
+    color: white !important;
 }
 
+/* මුළු වෙබ් පිටුවම (Body එකම) ලෝඩ් වෙද්දීම 25% කට කුඩා කර තොරණ තිරයට ගැළපීම */
 body {
     transform: scale(0.25) !important;
-    transform-origin: top left !important; /* කුඩා වීම වම්පස ඉහළ සිට සිදුවීමට */
+    transform-origin: top left !important; 
     width: 400% !important;
     height: 400% !important;
     background-color: black;
