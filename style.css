@@ -93,9 +93,9 @@ music-off {
     color: white
 }
 
-#main-content {
-    transform: scale(0.25);
-    transform-origin: top center;
-    width: 400%;
-    margin: 0 auto;
+body {
+    transform: scale(0.25) !important;
+    transform-origin: top center !important;
+    width: 400% !important;
+    height: 400% !important;
 }
